@@ -1,0 +1,17 @@
+<h2>Dashboard</h2>
+<h2>Welcome, {{ userName }}!</h2>
+<p>You are logged in!</p>
+<button (click)="logout()">Logout</button>
+<!-- <button (click)="getusers()">get users</button> -->
+
+<h3>All Users</h3>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.name }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+</table>
